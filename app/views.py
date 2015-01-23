@@ -10,3 +10,18 @@ def index(request):
     context_dict = {}
 
     return render_to_response('index.html', context_dict, context)
+def claim(request):
+    context = RequestContext(request)
+    context_dict = {}
+
+    return render_to_response('claim.html', context_dict, context)
+def action(request):
+    context = RequestContext(request)
+    context_dict = {}
+
+    return render_to_response('action.html', context_dict, context)
+def alias(request):
+    context = RequestContext(request)
+    context_dict = {}
+
+    return render_to_response('alias.html', context_dict, context)
