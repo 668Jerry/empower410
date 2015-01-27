@@ -17,9 +17,3 @@ urlpatterns = patterns('',
     url(r'^statement/$', views.index, name='statement'),
     url(r'^$', RedirectView.as_view(pattern_name='statement')),
 )
-
-from django.conf import settings # New Import
-from django.conf.urls.static import static # New Import
-
-if not settings.DEBUG:
-        urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
