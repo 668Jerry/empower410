@@ -45,6 +45,41 @@
         /*padding: 0;*/
     /*}*/
 </style>
+
+
+
+
+<script src="http://fb.me/react-0.12.2.js"></script>
+<script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
+<style>
+    .alias-member-full{
+        width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;
+    }
+    .alias-image-background{
+        width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;
+    }
+    .alias-image-photo{
+        width: 10em;overflow: hidden;
+    }
+    .alias-image-party{
+        width: 3.5em;padding-left: 1.5em;padding-right: 0em;float: left;margin-bottom: 0.3em;
+    }
+    .alias-image-name{
+        font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;
+    }
+    .alias-image-name-kao{
+        font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 0.5em;
+    }
+    .alias-image-name-chen{
+        font-size: 1.0em;margin-top: 0em;margin-bottom: 0em;float: right;padding-right: 0em;width: 6em;
+    }
+</style>
+
+
+
+
 <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
 </head>
 
@@ -75,261 +110,7 @@
             <span style="display:inline-block;width: 11em;text-align: center;"><h1 style="background-color: #AC917E;color: #FFFFFF;padding-top: 0.3em;padding-bottom: 0.3em;">→已表態</h1></span>
             <span style="display:inline-block;width: 11em;text-align: center;"><h1 style="background-color: #D5BFB1;color: #8F5C5B;padding-top: 0.3em;padding-bottom: 0.3em;">未表態</h1></span>
         </div>
-        <div class="action-article" style="width:58em;text-align: left;display: inline-block; color: #905d5c;font-family: sans-serif;font-weight: bold;">
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E5%B0%A4%E7%BE%8E%E5%A5%B3.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/dpp.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">尤美女</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E8%94%A1%E6%AD%A3%E5%85%83.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/kmt.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">蔡正元</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E5%91%A8%E5%80%AA%E5%AE%89.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/tsu.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">周倪安</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E9%AB%98%E9%87%91%E7%B4%A0%E6%A2%85.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/npsu.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 0em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 0.5em;">高金素梅</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E5%B0%A4%E7%BE%8E%E5%A5%B3.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/dpp.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">尤美女</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E8%94%A1%E6%AD%A3%E5%85%83.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/kmt.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">蔡正元</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E5%91%A8%E5%80%AA%E5%AE%89.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/tsu.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">周倪安</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E9%AB%98%E9%87%91%E7%B4%A0%E6%A2%85.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/npsu.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 0em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 0.5em;">高金素梅</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E5%B0%A4%E7%BE%8E%E5%A5%B3.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/dpp.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">尤美女</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E8%94%A1%E6%AD%A3%E5%85%83.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/kmt.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">蔡正元</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E5%91%A8%E5%80%AA%E5%AE%89.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/tsu.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">周倪安</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E9%AB%98%E9%87%91%E7%B4%A0%E6%A2%85.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/npsu.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 0em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 0.5em;">高金素梅</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E5%B0%A4%E7%BE%8E%E5%A5%B3.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/dpp.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">尤美女</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E8%94%A1%E6%AD%A3%E5%85%83.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/kmt.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">蔡正元</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E5%91%A8%E5%80%AA%E5%AE%89.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/tsu.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">周倪安</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E9%AB%98%E9%87%91%E7%B4%A0%E6%A2%85.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/npsu.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 0em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 0.5em;">高金素梅</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E5%B0%A4%E7%BE%8E%E5%A5%B3.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/dpp.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">尤美女</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E8%94%A1%E6%AD%A3%E5%85%83.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/kmt.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">蔡正元</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E5%91%A8%E5%80%AA%E5%AE%89.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/tsu.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">周倪安</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E9%AB%98%E9%87%91%E7%B4%A0%E6%A2%85.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/npsu.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 0em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 0.5em;">高金素梅</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E5%B0%A4%E7%BE%8E%E5%A5%B3.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/dpp.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">尤美女</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E8%94%A1%E6%AD%A3%E5%85%83.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/kmt.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">蔡正元</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E5%91%A8%E5%80%AA%E5%AE%89.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/tsu.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">周倪安</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E9%AB%98%E9%87%91%E7%B4%A0%E6%A2%85.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/npsu.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 0em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 0.5em;">高金素梅</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E5%B0%A4%E7%BE%8E%E5%A5%B3.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/dpp.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">尤美女</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E8%94%A1%E6%AD%A3%E5%85%83.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/kmt.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">蔡正元</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E5%91%A8%E5%80%AA%E5%AE%89.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/tsu.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">周倪安</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E9%AB%98%E9%87%91%E7%B4%A0%E6%A2%85.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/npsu.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 0em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 0.5em;">高金素梅</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E5%B0%A4%E7%BE%8E%E5%A5%B3.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/dpp.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">尤美女</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E8%94%A1%E6%AD%A3%E5%85%83.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/kmt.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">蔡正元</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E5%91%A8%E5%80%AA%E5%AE%89.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/tsu.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">周倪安</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E9%AB%98%E9%87%91%E7%B4%A0%E6%A2%85.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/npsu.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 0em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 0.5em;">高金素梅</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E5%B0%A4%E7%BE%8E%E5%A5%B3.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/dpp.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">尤美女</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E8%94%A1%E6%AD%A3%E5%85%83.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/kmt.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">蔡正元</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E5%91%A8%E5%80%AA%E5%AE%89.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/tsu.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 1em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 1em;">周倪安</h3>
-            </div>
-            <div style="width: 12em;float: left;background-color: #ffffff;border-radius: 10px;margin: 1em;">
-                <div style="width: 10em;height: 12em;padding-left: 1em;padding-right: 1em;margin-top:0.5em;margin-bottom:0.5em;overflow: hidden;">
-                    <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/%E9%AB%98%E9%87%91%E7%B4%A0%E6%A2%85.png" alt="" style="width: 10em;overflow: hidden;"/>
-                </div>
-                <img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/npsu.svg" alt="" style="width: 3.5em;padding-left: 1.5em;padding-right: 0em;float: left;"/>
-                <h3 style="font-size: 1.5em;margin-top: 0em;margin-bottom: 0.3em;float: right;padding-right: 0.5em;">高金素梅</h3>
-            </div>
-
-
+        <div id="action-article" style="width:58em;text-align: left;display: inline-block; color: #905d5c;font-family: sans-serif;font-weight: bold;">
         </div>
     </div>
 </div>
@@ -340,6 +121,82 @@
         </footer>
     </div>
 </div>
+
+
+
+
+
+<script type="text/jsx">
+    var C = React.createClass({
+        render: function() {
+            return (
+            <div className="alias-member-full">
+                <div className="alias-image-background">
+                    <img src={this.props.src} alt="" className="alias-image-photo"/>
+                </div>
+                <img src={this.props.partySrc} alt="" className="alias-image-party"/>
+                <h3 className={this.props.nameClass}>{this.props.name}</h3>
+            </div>
+            );
+        }
+    });
+    var MapData = React.createClass({
+        render: function() {
+            var commentNodes = this.props.d.map(function (d) {
+                return (
+                    <C name={d.name} agree={d.agree} party={d.party} id={d.id} location={d.location} src={d.src} partySrc={d.partySrc} nameClass={d.nameClass}/>
+                );
+            });
+            return (
+                <div>
+                    {commentNodes}
+                </div>
+            );
+        }
+    });
+    var FetchData = React.createClass({
+        loadCommentsFromServer: function() {
+            $.ajax({
+                url: this.props.url,
+                dataType: 'json',
+                success: function(d) {
+                    $.each(d, function(i) {
+                        d[i].src = "https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/" + d[i].name + ".png";
+                        d[i].partySrc = "https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/" + d[i].party + ".svg";
+                        if (d[i].name.localeCompare("鄭天財Sra．Kacaw") == 0) {
+                          d[i].nameClass = "alias-image-name-chen";
+                        } else if (d[i].name.localeCompare("高金素梅") == 0) {
+                          d[i].nameClass = "alias-image-name-kao";
+                        } else {
+                          d[i].nameClass = "alias-image-name";
+                        }
+                    });
+                    this.setState({d: d});
+                }.bind(this),
+                error: function(xhr, status, err) {
+                    console.error(this.props.url, status, err.toString());
+                }.bind(this)
+            });
+        },
+        getInitialState: function() {
+            return {d: []};
+        },
+        componentDidMount: function() {
+            this.loadCommentsFromServer();
+        },
+        render: function() {
+            return (
+                <MapData d={this.state.d} />
+            );
+        }
+    });
+    React.render(
+            <FetchData url="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/congressmember.json"/>,
+            document.getElementById('action-article')
+    );
+</script>
+
+
 </body>
 
 </html>
