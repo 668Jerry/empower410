@@ -144,89 +144,291 @@
 
 <!--頁中-->
 
+
+<style>
+    .party-full-screen-width {
+        background-color:#EBDBD0;
+        /*background-color:green;*/
+        width: 100%;
+    }
+    .party-full-content {
+        width:1024px;
+        margin-left:auto; margin-right:auto;
+        /*background-color:green;*/
+        padding-top: 15px;
+        background-color: #ecdbd1;background-image: url(https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/hand.svg);background-position: left bottom;background-repeat: no-repeat;
+    }
+    @media screen and (max-width: 1024px) {
+        .party-full-content {
+            width:100%; margin-left:auto; margin-right:auto;
+            /*background-color:red;*/
+            background-color:#EBDBD0;
+            padding-right: 15px;
+            padding-left: 15px;
+            background-color: #ecdbd1;background-image: url(https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/hand.svg);background-position: right bottom;background-repeat: no-repeat;
+        }
+    }
+    @media screen and (max-width: 930px) {
+        .party-full-content {
+            width:930px; margin-left:auto; margin-right:auto;
+            /*background-color:blue;*/
+            background-color:#EBDBD0;
+            padding-right: 15px;
+            padding-left: 15px;
+            background-color: #ecdbd1;background-image: url(https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/hand.svg);background-position: right bottom;background-repeat: no-repeat;
+        }
+    }
+    .party-sidebar {
+        /*background-color: yellow;*/
+        width: 22%;
+        /*float: left;*/
+        padding-left: 1%;
+        padding-top: 25px;
+        text-align: right;display: inline-block; color: #905d5c;font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        vertical-align: top;
+        margin-right: 20px;
+    }
+    .party-sidebar-h1 {
+        /*float: right;*/
+        font-size: 40px;
+        margin-bottom: 0px;
+        color: #905d5c;font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    }
+    .party-sidebar-h3 {
+        /*float: right;*/
+        font-size: 25px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        color: #905d5c;font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    }
+    .party-content {
+        /*background-color: #003366;*/
+        padding-top: 60px;
+        width: 55%;
+        text-align: left;
+        display: inline-block;
+        color: #905d5c;
+        font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        font-weight: bold;
+    }
+    .party-article {
+        padding-left: 80px;font-size: 20px;
+    }
+    .party-sidebar-mobile-hind {
+        display: none;
+    }
+    .party-sidebar-mobile-size {
+        display: inline-block;
+    }
+    @media screen and (min-width: 1024px) {
+        .party-content {
+            padding-bottom: 70px;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .party-sidebar {
+            display: none;
+        }
+        .party-content {
+            /*background-color: #003366;*/
+            width: 100%;
+        }
+        .party-article {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .party-sidebar-mobile-hind {
+            width: 100%;
+            display: inline-block;
+        }
+    }
+    @media screen and (max-width: 930px) {
+    }
+</style>
+
+<!--立委牆css-->
 <style>
     @media screen
     and (min-device-width : 1024px) {
         .alias-member-full {
-            width: 12em;
+            width: 170px;
             float: left;
             background-color: #ffffff;
             border-radius: 10px;
-            margin: 1em;
+            margin: 5px 8px 11px;
         }
         .alias-image-background {
-            width: 10em;
-            height: 12em;
-            padding-left: 1em;
-            padding-right: 1em;
-            margin-top: 0.5em;
-            margin-bottom: 0.5em;
+            width: 140px;
+            height: 190px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
             overflow: hidden;
         }
         .alias-image-photo {
-            width: 10em;
+            width: 154px;
             overflow: hidden;
         }
         .alias-image-party {
-            width: 3.5em;
-            padding-left: 1.5em;
-            padding-right: 0em;
+            width: 50px;
+            padding-left: 10px;
+            padding-right: 0px;
             float: left;
-            margin-bottom: 0.3em;
+            margin-bottom: 6px;
         }
         .alias-image-name {
-            font-size: 1.5em;
+            font-size: 24px;
             margin-top: 0em;
-            margin-bottom: 0.3em;
+            margin-bottom: 5px;
             float: right;
-            padding-right: 1em;
+            padding-right: 16px;
         }
         .alias-image-name-kao {
-            font-size: 1.5em;
-            margin-top: 0em;
-            margin-bottom: 0.3em;
+            font-size: 24px;
+            margin-top: 0px;
+            margin-bottom: 5px;
             float: right;
-            padding-right: 0.5em;
+            padding-right: 8px;
         }
         .alias-image-name-chen {
-            font-size: 1.0em;
-            margin-top: 0em;
-            margin-bottom: 0em;
+            font-size: 16px;
+            margin-top: 0px;
+            margin-bottom: 0px;
             float: right;
-            padding-right: 0em;
-            width: 6em;
+            padding-right: 0px;
+            width: 96px;
         }
+        .party-article-member {
+            width:744px;text-align: left;display: inline-block; color: #905d5c;font-family: sans-serif;font-weight: bold;
+            /*background-color: #cc1111;*/
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .alias-member-full {
+            width: 250px;
+            margin: 30px;
+        }
+        .alias-image-background {
+            width: 216px;
+            height: 260px;
+            padding-left: 15px;
+            padding-right: 10px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        .alias-image-photo {
+            width: 216px;
+            overflow: hidden;
+        }
+        .alias-image-party {
+            width: 50px;
+            padding-left: 10px;
+            padding-right: 0px;
+            float: left;
+            margin-bottom: 6px;
+        }
+        .alias-image-name {
+            font-size: 24px;
+            margin-top: 0px;
+            margin-bottom: 5px;
+            float: right;
+            padding-right: 16px;
+        }
+        .alias-image-name-kao {
+            font-size: 24px;
+            margin-top: 0px;
+            margin-bottom: 5px;
+            float: right;
+            padding-right: 8px;
+        }
+        .alias-image-name-chen {
+            font-size: 19px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            float: right;
+            padding-right: 8px;
+            width: 160px;
+        }
+        .party-article-member {
+            /*background-color: green;*/
+            width: 930px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @media screen and (max-width: 930px) {
     }
 </style>
 
-<div style="float: left;width: 100%;margin-bottom: 2.5em;">
-</div>
-<!--<div class="full-body" style="width: 100%;background-color: #ecdbd1;">-->
-<!--<div class="action-body" style="width: 80em;margin: auto;background-color: #ecdbd1;">-->
-<div class="full-body" style="width: 100%;background-color: #ecdbd1;padding-bottom: 2em;background-image: url(https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/hand.svg);background-position: left bottom;background-repeat: no-repeat;">
-    <div class="action-body" style="width: 80em;margin: auto;">
-        <div class="action-sidebar" style="width:20em;text-align: right;display: inline-block; color: #905d5c;font-family: sans-serif;vertical-align: top;">
-            <h1 style="font-size: 3em;">立委表態牆</h1>
-            <h2 style="font-size: 2em;">最新表態率：0/113</h2>
-            <span style="display:inline-block;width: 11em;text-align: center;"><h1 style="background-color: #AC917E;color: #FFFFFF;padding-top: 0.3em;padding-bottom: 0.3em;">→已表態</h1></span>
-            <span style="display:inline-block;width: 11em;text-align: center;"><h1 style="background-color: #D5BFB1;color: #8F5C5B;padding-top: 0.3em;padding-bottom: 0.3em;">未表態</h1></span>
-            <span style="display:inline-block;width: 11em;text-align: center;">
-                <a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false">Has Dropdown</a>
-            <ul id="drop1" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
-                <li><a href="#">This is a link</a></li>
-                <li><a href="#">This is another</a></li>
-                <li><a href="#">Yet another</a></li>
-            </ul>
-            <a data-dropdown="drop2" aria-controls="drop2" aria-expanded="false">Has Content Dropdown</a>
-            <div id="drop2" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1">
-                <p>Some text that people will think is awesome! Some text that people will think is awesome! Some text that people will think is awesome!</p>
-            </div>
-            </span>
+<div class="party-full-screen-width" style="">
+		<div class="party-full-content" style="">
+                <div class="party-sidebar">
+                        <h1 class="party-sidebar-h1" style="">立委表態牆</h1>
+                        <h3 class="party-sidebar-h3" style="">最新表態率：0/111</h3>
+                        <span style="display:inline-block;width: 11em;text-align: center;"><h1 style="background-color: #AC917E;color: #FFFFFF;padding-top: 0.3em;padding-bottom: 0.3em;">→已表態</h1></span>
+                        <span style="display:inline-block;width: 11em;text-align: center;"><h1 style="background-color: #D5BFB1;color: #8F5C5B;padding-top: 0.3em;padding-bottom: 0.3em;">未表態</h1></span>
+                </div>
+                <div class="party-content" style="">
+                        <div class="party-article-full" style="">
+                                <div class="party-article-member" id="party-article-member" style="">
+                                </div>
+                        </div>
+
+                </div>
+                <!--<div class="party-sidebar-mobile-hind">-->
+                        <!--<div class="party-sidebar-mobile-size" style="width: 50%;">-->
+                                <!--<h1 class="party-sidebar-h1" style="padding-left: 0px;padding-bottom: 0px;">共同發起團體</h1>-->
+                                <!--<ol class="party-sidebar-ol" style="padding-left: 0px;padding-bottom: 30px;">-->
+                                        <!--<li><h3 class="party-sidebar-h3" style="padding-left: 0px;text-align: left;padding-left: 0px;">島國前進</h3></li>-->
+                                        <!--<li><h3 class="party-sidebar-h3" style="padding-left: 0px;text-align: left;padding-left: 0px;">割闌尾計劃</h3>-->
+                                        <!--<li><h3 class="party-sidebar-h3" style="padding-left: 0px;text-align: left;padding-left: 0px;">人民做主教育基金會</h3>-->
+                                        <!--<li><h3 class="party-sidebar-h3" style="padding-left: 0px;text-align: left;padding-left: 0px;">公民1985行動聯盟</h3>-->
+                                <!--</ol>-->
+                        <!--</div>-->
+                            <!--&lt;!&ndash;</h3>&ndash;&gt;-->
+                        <!--<div class="party-sidebar-mobile-size" style="width: 40%;">-->
+                                <!--<h1 class="party-sidebar-h1" style="padding-left: 0px;padding-bottom: 0px;">工作小組成員</h1>-->
+                                <!--<ol class="party-sidebar-ol" style="padding-left: 0px;padding-bottom: 30px;">-->
+                                        <!--<li><h3 class="party-sidebar-h3" style="">王希、林祖儀、林飛帆、柳林瑋</h3></li>-->
+                                        <!--<li><h3 class="party-sidebar-h3" style="">陳惠敏、陳麗貴、劉明新、蔡旺霖</h3></li>-->
+                                        <!--<li><h3 class="party-sidebar-h3" style="">聯絡人：黃國昌</h3></li>-->
+                                        <!--<li><h3 class="party-sidebar-h3" style="">榮譽召集人：林義雄</h3></li>-->
+                                <!--</ol>-->
+                        <!--</div>-->
+                <!--</div>-->
         </div>
-        <div id="action-article" style="width:58em;text-align: left;display: inline-block; color: #905d5c;font-family: sans-serif;font-weight: bold;">
-        </div>
-    </div>
 </div>
+
+<!--<div style="float: left;width: 100%;margin-bottom: 2.5em;">-->
+<!--</div>-->
+<!--&lt;!&ndash;<div class="full-body" style="width: 100%;background-color: #ecdbd1;">&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="action-body" style="width: 80em;margin: auto;background-color: #ecdbd1;">&ndash;&gt;-->
+<!--<div class="full-body" style="width: 100%;background-color: #ecdbd1;padding-bottom: 2em;background-image: url(https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/hand.svg);background-position: left bottom;background-repeat: no-repeat;">-->
+    <!--<div class="action-body" style="width: 80em;margin: auto;">-->
+        <!--<div class="action-sidebar" style="width:20em;text-align: right;display: inline-block; color: #905d5c;font-family: sans-serif;vertical-align: top;">-->
+            <!--<h1 style="font-size: 3em;">立委表態牆</h1>-->
+            <!--<h2 style="font-size: 2em;">最新表態率：0/111</h2>-->
+            <!--<span style="display:inline-block;width: 11em;text-align: center;"><h1 style="background-color: #AC917E;color: #FFFFFF;padding-top: 0.3em;padding-bottom: 0.3em;">→已表態</h1></span>-->
+            <!--<span style="display:inline-block;width: 11em;text-align: center;"><h1 style="background-color: #D5BFB1;color: #8F5C5B;padding-top: 0.3em;padding-bottom: 0.3em;">未表態</h1></span>-->
+            <!--<span style="display:inline-block;width: 11em;text-align: center;">-->
+                <!--<a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false">Has Dropdown</a>-->
+            <!--<ul id="drop1" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">-->
+                <!--<li><a href="#">This is a link</a></li>-->
+                <!--<li><a href="#">This is another</a></li>-->
+                <!--<li><a href="#">Yet another</a></li>-->
+            <!--</ul>-->
+            <!--<a data-dropdown="drop2" aria-controls="drop2" aria-expanded="false">Has Content Dropdown</a>-->
+            <!--<div id="drop2" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1">-->
+                <!--<p>Some text that people will think is awesome! Some text that people will think is awesome! Some text that people will think is awesome!</p>-->
+            <!--</div>-->
+            <!--</span>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;<div id="action-article" style="width:58em;text-align: left;display: inline-block; color: #905d5c;font-family: sans-serif;font-weight: bold;">&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--</div>-->
+<!--</div>-->
 
 <!--立委牆-->
 
@@ -296,7 +498,7 @@
 		});
 		React.render(
                 <FetchData url="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/congressmember.json"/>,
-                document.getElementById('action-article')
+                document.getElementById('party-article-member')
 		);
 </script>
 
