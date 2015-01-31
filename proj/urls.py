@@ -15,5 +15,6 @@ urlpatterns = patterns('',
     url(r'^action/$', views.action, name='action'),
     url(r'^alias/$', views.alias, name='alias'),
     url(r'^statement/$', views.index, name='statement'),
+    url(r'^people/$', views.people, name='people'),
     url(r'^$', RedirectView.as_view(pattern_name='statement')),
 )

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 {% load staticfiles %} <!-- New line -->
 <html>
-
 <!--頭-->
 
 <head>
@@ -15,44 +14,52 @@
     <!--<link rel="stylesheet" href="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/foundation.css" />-->
     <!--網格用法：class="large-4 medium-4 small-4 columns"-->
 
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
 </head>
 
 <!--頁首-->
 
+
 <style>
-    /*@media (min-device-width : 1024px) {*/
-        .head-full-screen-width {
-            /*background-color:magenta;*/
-        }
-        .head-full-content {
-            width:1024px; margin-left:auto; margin-right:auto;
-            /*background-color:green;*/
-            height:168px;
-            padding-top: 15px;
-        }
+    .head-full-screen-width {
+        /*background-color: green;*/
+        background-color: #ffffff;
+    }
+    .head-full-content {
+        width:1024px; margin-left:auto; margin-right:auto;
+        background-color: #ffffff;
+        height:168px;
+        padding-top: 15px;
+    }
     @media screen and (max-width: 1024px) {
         .head-full-content {
-            width:100%; margin-left:auto; margin-right:auto; background-color:red;
+            width:100%; margin-left:auto; margin-right:auto;
+            /*background-color:red;*/
             padding-right: 15px;
             padding-left: 15px;
             /*height:200px;*/
         }
-
     }
-    @media screen and (max-width: 930px) {
+    @media screen and (max-width: 950px) {
         .head-full-content {
-            width:930px; margin-left:auto; margin-right:auto; background-color:blue;
+            width:930px; margin-left:auto; margin-right:auto;
+            /*background-color:blue;*/
             padding-right: 15px;
             padding-left: 15px;
             /*height:200px;*/
         }
-
     }
         .head-img {
             width:420px; float:left; vertical-align:middle;padding-right: 0px;
         }
         .head-header {
-            width:480px; display:inline-block; color:#905d5c; font-family:sans-serif; float: right;
+            width:480px; display:inline-block; color:#905d5c; font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+            float: right;
             /*background-color:#fff;*/
             /*height: 500px;*/
         }
@@ -67,23 +74,21 @@
             -moz-border-radius: 0.8em 0.8em 0.8em 0.8em;
             border-radius: 0.8em 0.8em 0.8em 0.8em;  /*standards-compliant: (IE)*/
             text-align: center;
-            font-family: sans-serif;
+            font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
             background-color: #ecdbd1;color: #905d5c; height: 50px; float:right;
 		}
-        .head-nav-statement-li {
-            width: 130px;
+        .head-nav-action-li {
+            width: 150px;
         }
         .head-nav-claim-li {
             width: 150px;
         }
-        .head-nav-action-li {
-            width: 150px;
+        .head-nav-statement-li {
+            width: 130px;
         }
-        /*.head-nav-alias-li {*/
-            /*width: 150px; background-color: #6c2626;color: #ffffff;*/
-        /*}*/
         .head-nav-h1 {
             font-size: 20px;
+            margin-top: 10px;
         }
         .head-nav-full-bottom {
             text-decoration: none;
@@ -92,21 +97,24 @@
             -moz-border-radius: 0.8em 0.8em 0.8em 0.8em;
             border-radius: 0.8em 0.8em 0.8em 0.8em;  /*standards-compliant: (IE)*/
             text-align: center;
-            font-family: sans-serif;
+            font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
             height: 70px; float:right;
             padding-top: 15px;
 		}
         .head-nav-alias-li {
-            margin-top: 25px;
+            margin-top: 0px;
             width: 150px;
         }
         .head-nav-people-li {
-            margin-top: 25px;
+            margin-top: 0px;
             width: 150px;
         }
         .head-nav-flyingV-li {
             margin-top: 0px;
             width: 130px;
+        }
+        .head-nav-img {
+            border-color: #ffffff;
         }
 </style>
 
@@ -117,25 +125,22 @@
 						<ul class="head-ul" style="">
                                 <a href="../action/"><li class="head-nav-full-top head-nav-action-li" style=""><h1 class="head-nav-h1" style="">我們的行動</h1></li></a>
 								<a href="../claim/"><li class="head-nav-full-top head-nav-claim-li" style=""><h1 class="head-nav-h1" style="">我們的訴求</h1></li></a>
-                                <a href="../statement/"><li class="head-nav-full-top head-nav-statement-li" style=""><h1 class="head-nav-h1" style="">行動聲明</h1></li></a>
-								<!--<a href="."><li class="head-nav-full head-nav-alias-li" style=""><h1 class="head-nav-h1" style="">立委表態牆</h1></li></a>-->
+                                <a href="../statement/"><li class="head-nav-full-top head-nav-statement-li" style="margin-left: 0px;"><h1 class="head-nav-h1" style="">行動聲明</h1></li></a>
 						</ul>
 				</header>
                 <header class="head-header" style="">
 						<ul class="head-ul" style="">
-                                <a href="../people/"><li class="head-nav-full-top head-nav-people-li" style=""><h1 class="head-nav-h1" style="">公民聲援牆</h1></li></a>
-								<a href="../alias/"><li class="head-nav-full-top head-nav-alias-li" style=""><h1 class="head-nav-h1" style="">立委聲援牆</h1></li></a>
-                                <a href="../flyingV/"><li class="head-nav-full-bottom head-nav-flyingV-li" style=""><img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/flyingv.svg"
+                                <a href="../people/"><li class="head-nav-full-bottom head-nav-people-li" style=""><img class="head-nav-img" src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/people.svg"
+                                                                                                                alt="公民聲援牆"/></li></a>
+								<a href="../alias/"><li class="head-nav-full-bottom head-nav-alias-li" style=""><img class="head-nav-img" src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/alias-selected.svg"
+                                                                                                                alt="立委表態牆"/></li></a>
+                                <a href="../flyingV/"><li class="head-nav-full-bottom head-nav-flyingV-li" style=""><img class="head-nav-img" src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/flyingv.svg"
                                                                                                                 alt="flyingV"/></li></a>
 						</ul>
 				</header>
 
 		</div>
 </div>
-
-<style>
-</style>
-
 
 <!--頁中-->
 
@@ -298,42 +303,44 @@
 <!--頁尾-->
 
 <style>
- /*@media (min-device-width : 1024px) {*/
-        .leg-full-screen-width {
-            background-color:magenta;
-        }
-        .leg-full-content {
-            width:1024px; margin-left:auto; margin-right:auto;
-            background-color:green;
-            height:68px;
-            padding-top: 15px;
-        }
+    .leg-full-screen-width {
+        background-color: #fff;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .leg-full-content {
+        width:1024px; margin-left:auto; margin-right:auto;
+        height:68px;
+        background-color: #fff;
+    }
     @media screen and (max-width: 1024px) {
         .leg-full-content {
-            width:100%; margin-left:auto; margin-right:auto; background-color:red;
-            padding-right: 15px;
-            padding-left: 15px;
-            /*height:200px;*/
+            width:100%; margin-left:auto; margin-right:auto;
         }
 
     }
     @media screen and (max-width: 930px) {
         .leg-full-content {
-            width:930px; margin-left:auto; margin-right:auto; background-color:blue;
-            padding-right: 15px;
-            padding-left: 15px;
-            /*height:200px;*/
+            width:930px; margin-left:auto; margin-right:auto;
         }
 
+    }
+    footer {
+        color: #905d5c;font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+        text-align: center;
+        background-color: #fff;
+    }
+    .leg-h3 {
+        font-size: 18px;
+        background-color: #fff;
     }
 </style>
 <div class="leg-full-screen-width" style="">
 		<div class="leg-full-content" style="">
-                <footer style="color: #905d5c;font-family: sans-serif;font-size: 1.5em;text-align: center;">
-                        <h3 style="font-size: 14px;">聯絡所：島國前進丨電話：02-2358-1008410丨地址：台北市中正區仁愛路二段34號2樓之一<br />E-mail：empowwer.taiwan@gmail.com丨410還權於民·重返立院</h3>
-                </footer>
+                <footer style="">
+						<h3 class="leg-h3" style="">聯絡所：島國前進丨電話：02-2358-1008410丨地址：台北市中正區仁愛路二段34號2樓之一<br />E-mail：empowwer.taiwan@gmail.com丨410還權於民·重返立院</h3>
+				</footer>
         </div>
 </div>
 </body>
-
 </html>

@@ -25,3 +25,8 @@ def alias(request):
     context_dict = {}
 
     return render_to_response('alias.html', context_dict, context)
+def people(request):
+    context = RequestContext(request)
+    context_dict = {}
+
+    return render_to_response('people.html', context_dict, context)
