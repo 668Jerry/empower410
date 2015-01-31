@@ -14,6 +14,12 @@
     <!--<link rel="stylesheet" href="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/foundation.css" />-->
     <!--網格用法：class="large-4 medium-4 small-4 columns"-->
 
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
 </head>
 
 <!--頁首-->
@@ -120,7 +126,6 @@
                                 <a href="../action/"><li class="head-nav-full-top head-nav-action-li" style=""><h1 class="head-nav-h1" style="">我們的行動</h1></li></a>
 								<a href="../claim/"><li class="head-nav-full-top head-nav-claim-li" style=""><h1 class="head-nav-h1" style="">我們的訴求</h1></li></a>
                                 <a href="../statement/"><li class="head-nav-full-top head-nav-statement-li" style="margin-left: 0px;"><h1 class="head-nav-h1" style="">行動聲明</h1></li></a>
-								<!--<a href="."><li class="head-nav-full head-nav-alias-li" style=""><h1 class="head-nav-h1" style="">立委表態牆</h1></li></a>-->
 						</ul>
 				</header>
                 <header class="head-header" style="">
@@ -216,6 +221,9 @@
     .party-sidebar-mobile-hind {
         display: none;
     }
+    .party-sidebar-mobile-size {
+        display: inline-block;
+    }
     @media screen and (min-width: 1024px) {
         .party-content {
             padding-bottom: 70px;
@@ -256,7 +264,7 @@
                             <!--</h3>-->
                         </br>
                         <h1 class="party-sidebar-h1" style="padding-left: 100px;padding-bottom: 10px;">工作小組成員</h1>
-                        <ol style="list-style: none;">
+                        <ol class="party-sidebar-ol" style="">
                                 <li><h3 class="party-sidebar-h3" style="">王希、林祖儀、林飛帆、柳林瑋</h3></li>
                                 <li><h3 class="party-sidebar-h3" style="">陳惠敏、陳麗貴、劉明新、蔡旺霖</h3></li>
                                 <li><h3 class="party-sidebar-h3" style="">聯絡人：黃國昌</h3></li>
@@ -291,7 +299,7 @@
 
                 </div>
                 <div class="party-sidebar-mobile-hind">
-                        <div class="party-sidebar-mobile-size" style="width: 50%;display: inline-block;">
+                        <div class="party-sidebar-mobile-size" style="width: 50%;">
                                 <h1 class="party-sidebar-h1" style="padding-left: 0px;padding-bottom: 0px;">共同發起團體</h1>
                                 <ol class="party-sidebar-ol" style="padding-left: 0px;padding-bottom: 30px;">
                                         <li><h3 class="party-sidebar-h3" style="padding-left: 0px;text-align: left;padding-left: 0px;">島國前進</h3></li>
@@ -301,7 +309,7 @@
                                 </ol>
                         </div>
                             <!--</h3>-->
-                        <div class="party-sidebar-mobile-size" style="width: 40%;display: inline-block;">
+                        <div class="party-sidebar-mobile-size" style="width: 40%;">
                                 <h1 class="party-sidebar-h1" style="padding-left: 0px;padding-bottom: 0px;">工作小組成員</h1>
                                 <ol class="party-sidebar-ol" style="padding-left: 0px;padding-bottom: 30px;">
                                         <li><h3 class="party-sidebar-h3" style="">王希、林祖儀、林飛帆、柳林瑋</h3></li>
@@ -319,39 +327,35 @@
 
 <style>
     .leg-full-screen-width {
-        margin-right: auto;
-        margin-left: auto;
-        clear: both;
-        /*height: 00px;*/
+        background-color: #fff;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
     .leg-full-content {
         width:1024px; margin-left:auto; margin-right:auto;
         height:68px;
-        padding-top: 15px;
+        background-color: #fff;
     }
     @media screen and (max-width: 1024px) {
         .leg-full-content {
             width:100%; margin-left:auto; margin-right:auto;
-            padding-right: 15px;
-            padding-left: 15px;
         }
 
     }
     @media screen and (max-width: 930px) {
         .leg-full-content {
             width:930px; margin-left:auto; margin-right:auto;
-            padding-right: 15px;
-            padding-left: 15px;
         }
 
     }
     footer {
         color: #905d5c;font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
         text-align: center;
-        padding-bottom:10px;
+        background-color: #fff;
     }
     .leg-h3 {
         font-size: 18px;
+        background-color: #fff;
     }
 </style>
 <div class="leg-full-screen-width" style="">
