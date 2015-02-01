@@ -18,12 +18,12 @@
         body {
             margin: 0px;
             padding: 0px;
+            /*background-color: greenyellow;*/
         }
     </style>
 </head>
 
 <!--頁首-->
-
 
 <style>
     .head-full-screen-width {
@@ -55,11 +55,14 @@
         }
     }
         .head-img {
-            width:420px; float:left; vertical-align:middle;padding-right: 0px;
+            width:420px; vertical-align:middle;padding-right: 0px;
+            float:left;
+            /*display: inline-block;*/
         }
         .head-header {
             width:480px; display:inline-block; color:#905d5c; font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
             float: right;
+            /*display: inline-block;*/
             /*background-color:#fff;*/
             /*height: 500px;*/
         }
@@ -75,7 +78,9 @@
             border-radius: 0.8em 0.8em 0.8em 0.8em;  /*standards-compliant: (IE)*/
             text-align: center;
             font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-            background-color: #ecdbd1;color: #905d5c; height: 50px; float:right;
+            background-color: #ecdbd1;color: #905d5c; height: 50px;
+            float:right;
+            /*display: inline-block;*/
 		}
         .head-nav-action-li {
             width: 150px;
@@ -98,7 +103,9 @@
             border-radius: 0.8em 0.8em 0.8em 0.8em;  /*standards-compliant: (IE)*/
             text-align: center;
             font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-            height: 70px; float:right;
+            height: 70px;
+            float:right;
+            /*display: inline-block;*/
             padding-top: 15px;
 		}
         .head-nav-alias-li {
@@ -144,11 +151,9 @@
 
 <!--頁中-->
 
-
 <style>
     .party-full-screen-width {
         background-color:#EBDBD0;
-        /*background-color:green;*/
         width: 100%;
     }
     .party-full-content {
@@ -157,14 +162,13 @@
         /*background-color:green;*/
         padding-top: 15px;
         background-color: #ecdbd1;background-image: url(https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/hand.svg);background-position: left bottom;background-repeat: no-repeat;
+        padding-bottom: 30px;
     }
     @media screen and (max-width: 1024px) {
         .party-full-content {
-            width:100%; margin-left:auto; margin-right:auto;
+            width:100%;
             /*background-color:red;*/
             background-color:#EBDBD0;
-            padding-right: 15px;
-            padding-left: 15px;
             background-color: #ecdbd1;background-image: url(https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/hand.svg);background-position: right bottom;background-repeat: no-repeat;
         }
     }
@@ -173,23 +177,20 @@
             width:930px; margin-left:auto; margin-right:auto;
             /*background-color:blue;*/
             background-color:#EBDBD0;
-            padding-right: 15px;
-            padding-left: 15px;
             background-color: #ecdbd1;background-image: url(https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/hand.svg);background-position: right bottom;background-repeat: no-repeat;
         }
     }
+    /*頁中的側邊欄*/
     .party-sidebar {
-        /*background-color: yellow;*/
-        width: 22%;
-        /*float: left;*/
-        padding-left: 1%;
+        width: 280px;
         padding-top: 25px;
         text-align: right;display: inline-block; color: #905d5c;font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
         vertical-align: top;
-        margin-right: 20px;
+        margin-right: 0px;
+        margin-left: 20px;
+        /*background-color: yellow;*/
     }
     .party-sidebar-h1 {
-        /*float: right;*/
         font-size: 40px;
         margin-bottom: 0px;
         color: #905d5c;font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -201,139 +202,152 @@
         margin-top: 0px;
         color: #905d5c;font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     }
+    .party-sidebar-span
+    {
+        display:inline-block;width: 100px;text-align: center;
+    }
+    @media screen and (max-width: 1024px) {
+        .party-sidebar {
+            width: 100%;
+            text-align: left;
+            padding-left: 35px;
+            /*background-color: midnightblue;*/
+        }
+        .party-sidebar-span
+        {
+            display:inline-block;width: 100px;text-align: center;
+        }
+    }
+    @media screen and (max-width: 930px) {
+
+    }
+    /*頁中的立委欄*/
     .party-content {
-        /*background-color: #003366;*/
+        width: 600px;
+        margin-left: 50px;
         padding-top: 60px;
-        width: 55%;
         text-align: left;
         display: inline-block;
         color: #905d5c;
         font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
         font-weight: bold;
+        /*background-color: greenyellow;*/
+        padding-bottom: 140px;
     }
-    .party-article {
-        padding-left: 80px;font-size: 20px;
-    }
-    .party-sidebar-mobile-hind {
-        display: none;
-    }
-    .party-sidebar-mobile-size {
-        display: inline-block;
-    }
-    @media screen and (min-width: 1024px) {
-        .party-content {
-            padding-bottom: 70px;
-        }
-    }
+
     @media screen and (max-width: 1024px) {
-        .party-sidebar {
-            display: none;
-        }
         .party-content {
-            /*background-color: #003366;*/
-            width: 100%;
-        }
-        .party-article {
-            padding-left: 0px;
-            padding-right: 0px;
-        }
-        .party-sidebar-mobile-hind {
-            width: 100%;
+            width: 900px;
+            margin-left: 50px;
+            padding-top: 60px;
+            text-align: left;
             display: inline-block;
+            color: #905d5c;
+            font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+            font-weight: bold;
+            /*background-color: #003366;*/
+            padding-bottom: 70px;
         }
     }
     @media screen and (max-width: 930px) {
     }
+
 </style>
 
 <!--立委牆css-->
 <style>
-    @media screen
-    and (min-device-width : 1024px) {
-        .alias-member-full {
-            width: 170px;
-            float: left;
-            background-color: #ffffff;
-            border-radius: 10px;
-            margin: 5px 8px 11px;
-        }
-        .alias-image-background {
-            width: 140px;
-            height: 190px;
-            padding-left: 10px;
-            padding-right: 10px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            overflow: hidden;
-        }
-        .alias-image-photo {
-            width: 154px;
-            overflow: hidden;
-        }
-        .alias-image-party {
-            width: 50px;
-            padding-left: 10px;
-            padding-right: 0px;
-            float: left;
-            margin-bottom: 6px;
-        }
-        .alias-image-name {
-            font-size: 24px;
-            margin-top: 0em;
-            margin-bottom: 5px;
-            float: right;
-            padding-right: 16px;
-        }
-        .alias-image-name-kao {
-            font-size: 24px;
-            margin-top: 0px;
-            margin-bottom: 5px;
-            float: right;
-            padding-right: 8px;
-        }
-        .alias-image-name-chen {
-            font-size: 16px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            float: right;
-            padding-right: 0px;
-            width: 96px;
-        }
-        .party-article-member {
-            width:744px;text-align: left;display: inline-block; color: #905d5c;font-family: sans-serif;font-weight: bold;
-            /*background-color: #cc1111;*/
-        }
+    .alias-member-full {
+        width: 180px;
+        float: left;
+        background-color: #ffffff;
+        border-radius: 10px;
+        margin: 5px 10px 11px;
+    }
+    .alias-image-background {
+        width: 160px;
+        height: 190px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        /*background-color: gold;*/
+    }
+    .alias-image-photo {
+        width: 160px;
+    }
+    .alias-image-party {
+        width: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        float: left;
+        /*display: inline-block;*/
+        margin-bottom: 6px;
+    }
+    .alias-image-name {
+        font-size: 24px;
+        margin-bottom: 5px;
+        float: right;
+        /*display: in   line-block;*/
+        padding-left: 20px;
+        padding-top: 0px;
+        margin-top: 0px;
+        padding-right: 16px;
+    }
+    .alias-image-name-kao {
+        font-size: 24px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        float: right;
+        /*display: inline-block;*/
+        padding-right: 8px;
+    }
+    .alias-image-name-chen {
+        font-size: 15px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        float: right;
+        /*display: inline-block;*/
+        padding-right: 0px;
+        width: 96px;
     }
     @media screen and (max-width: 1024px) {
         .alias-member-full {
-            width: 250px;
-            margin: 30px;
+            width: 260px;
+            float: left;
+            background-color: #ffffff;
+            border-radius: 10px;
+            margin: 5px 20px 11px;
         }
         .alias-image-background {
-            width: 216px;
+            width: 220px;
             height: 260px;
-            padding-left: 15px;
-            padding-right: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
             margin-top: 20px;
             margin-bottom: 10px;
             overflow: hidden;
+            /*background-color: gold;*/
         }
         .alias-image-photo {
-            width: 216px;
-            overflow: hidden;
+            width: 220px;
         }
         .alias-image-party {
             width: 50px;
-            padding-left: 10px;
-            padding-right: 0px;
+            margin-left: 10px;
+            margin-right: 10px;
             float: left;
+            /*display: inline-block;*/
             margin-bottom: 6px;
         }
         .alias-image-name {
             font-size: 24px;
-            margin-top: 0px;
             margin-bottom: 5px;
             float: right;
+            /*display: in   line-block;*/
+            padding-left: 20px;
+            padding-top: 0px;
+            margin-top: 0px;
             padding-right: 16px;
         }
         .alias-image-name-kao {
@@ -341,21 +355,17 @@
             margin-top: 0px;
             margin-bottom: 5px;
             float: right;
+            /*display: inline-block;*/
             padding-right: 8px;
         }
         .alias-image-name-chen {
-            font-size: 19px;
-            margin-top: 0px;
+            font-size: 18px;
+            margin-top: 5px;
             margin-bottom: 0px;
             float: right;
-            padding-right: 8px;
-            width: 160px;
-        }
-        .party-article-member {
-            /*background-color: green;*/
-            width: 930px;
-            margin-left: auto;
-            margin-right: auto;
+            /*display: inline-block;*/
+            padding-right: 0px;
+            width: 180px;
         }
     }
     @media screen and (max-width: 930px) {
@@ -367,68 +377,674 @@
                 <div class="party-sidebar">
                         <h1 class="party-sidebar-h1" style="">立委表態牆</h1>
                         <h3 class="party-sidebar-h3" style="">最新表態率：0/111</h3>
-                        <span style="display:inline-block;width: 11em;text-align: center;"><h1 style="background-color: #AC917E;color: #FFFFFF;padding-top: 0.3em;padding-bottom: 0.3em;">→已表態</h1></span>
-                        <span style="display:inline-block;width: 11em;text-align: center;"><h1 style="background-color: #D5BFB1;color: #8F5C5B;padding-top: 0.3em;padding-bottom: 0.3em;">未表態</h1></span>
+                        <span class="party-sidebar-span" style=""><h1 style="background-color: #AC917E;color: #FFFFFF;padding-top: 5px;padding-bottom: 5px;font-size: 20px;">→已表態</h1></span>
+                        <span class="party-sidebar-span" style=""><h1 style="background-color: #D5BFB1;color: #8F5C5B;padding-top: 5px;padding-bottom: 5px;font-size: 20px;">未表態</h1></span>
                 </div>
-                <div class="party-content" style="">
-                        <div class="party-article-full" style="">
-                                <div class="party-article-member" id="party-article-member" style="">
-                                </div>
-                        </div>
+                <div class="party-content" id="party-content" style="">
+                        <!--<div class="alias-member-full" data-reactid=".0.1j">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1j.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/陳雪生.png" alt="" class="alias-image-photo" data-reactid=".0.1j.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨籍.svg" alt="" class="alias-image-party" data-reactid=".0.1j.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.1j.2">陳雪生</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2k">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2k.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/鄭天財Sra．Kacaw.png" alt="" class="alias-image-photo" data-reactid=".0.2k.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2k.1">-->
+                                <!--<h3 class="alias-image-name-chen" data-reactid=".0.2k.2">鄭天財Sra．Kacaw</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.5">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.5.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/王金平.png" alt="" class="alias-image-photo" data-reactid=".0.5.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.5.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.5.2">王金平</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2e">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2e.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/蔡正元.png" alt="" class="alias-image-photo" data-reactid=".0.2e.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2e.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2e.2">蔡正元</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/尤美女.png" alt="" class="alias-image-photo" data-reactid=".0.2.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/民主進步黨.svg" alt="" class="alias-image-party" data-reactid=".0.2.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2.2">尤美女</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1s">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1s.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/高金素梅.png" alt="" class="alias-image-photo" data-reactid=".0.1s.0.0">-->
+                                <!--</div><img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨團結聯盟.svg" alt="" class="alias-image-party" data-reactid=".0.1s.1">-->
+                                        <!--<h3 class="alias-image-name-kao" data-reactid=".0.1s.2">高金素梅</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1j">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1j.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/陳雪生.png" alt="" class="alias-image-photo" data-reactid=".0.1j.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨籍.svg" alt="" class="alias-image-party" data-reactid=".0.1j.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.1j.2">陳雪生</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2k">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2k.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/鄭天財Sra．Kacaw.png" alt="" class="alias-image-photo" data-reactid=".0.2k.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2k.1">-->
+                                <!--<h3 class="alias-image-name-chen" data-reactid=".0.2k.2">鄭天財Sra．Kacaw</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.5">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.5.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/王金平.png" alt="" class="alias-image-photo" data-reactid=".0.5.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.5.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.5.2">王金平</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2e">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2e.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/蔡正元.png" alt="" class="alias-image-photo" data-reactid=".0.2e.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2e.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2e.2">蔡正元</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/尤美女.png" alt="" class="alias-image-photo" data-reactid=".0.2.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/民主進步黨.svg" alt="" class="alias-image-party" data-reactid=".0.2.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2.2">尤美女</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1s">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1s.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/高金素梅.png" alt="" class="alias-image-photo" data-reactid=".0.1s.0.0">-->
+                                <!--</div><img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨團結聯盟.svg" alt="" class="alias-image-party" data-reactid=".0.1s.1">-->
+                                        <!--<h3 class="alias-image-name-kao" data-reactid=".0.1s.2">高金素梅</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1j">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1j.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/陳雪生.png" alt="" class="alias-image-photo" data-reactid=".0.1j.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨籍.svg" alt="" class="alias-image-party" data-reactid=".0.1j.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.1j.2">陳雪生</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2k">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2k.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/鄭天財Sra．Kacaw.png" alt="" class="alias-image-photo" data-reactid=".0.2k.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2k.1">-->
+                                <!--<h3 class="alias-image-name-chen" data-reactid=".0.2k.2">鄭天財Sra．Kacaw</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.5">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.5.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/王金平.png" alt="" class="alias-image-photo" data-reactid=".0.5.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.5.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.5.2">王金平</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2e">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2e.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/蔡正元.png" alt="" class="alias-image-photo" data-reactid=".0.2e.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2e.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2e.2">蔡正元</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1j">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1j.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/陳雪生.png" alt="" class="alias-image-photo" data-reactid=".0.1j.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨籍.svg" alt="" class="alias-image-party" data-reactid=".0.1j.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.1j.2">陳雪生</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2k">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2k.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/鄭天財Sra．Kacaw.png" alt="" class="alias-image-photo" data-reactid=".0.2k.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2k.1">-->
+                                <!--<h3 class="alias-image-name-chen" data-reactid=".0.2k.2">鄭天財Sra．Kacaw</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.5">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.5.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/王金平.png" alt="" class="alias-image-photo" data-reactid=".0.5.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.5.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.5.2">王金平</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2e">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2e.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/蔡正元.png" alt="" class="alias-image-photo" data-reactid=".0.2e.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2e.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2e.2">蔡正元</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/尤美女.png" alt="" class="alias-image-photo" data-reactid=".0.2.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/民主進步黨.svg" alt="" class="alias-image-party" data-reactid=".0.2.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2.2">尤美女</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1s">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1s.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/高金素梅.png" alt="" class="alias-image-photo" data-reactid=".0.1s.0.0">-->
+                                <!--</div><img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨團結聯盟.svg" alt="" class="alias-image-party" data-reactid=".0.1s.1">-->
+                                        <!--<h3 class="alias-image-name-kao" data-reactid=".0.1s.2">高金素梅</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1j">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1j.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/陳雪生.png" alt="" class="alias-image-photo" data-reactid=".0.1j.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨籍.svg" alt="" class="alias-image-party" data-reactid=".0.1j.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.1j.2">陳雪生</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2k">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2k.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/鄭天財Sra．Kacaw.png" alt="" class="alias-image-photo" data-reactid=".0.2k.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2k.1">-->
+                                <!--<h3 class="alias-image-name-chen" data-reactid=".0.2k.2">鄭天財Sra．Kacaw</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.5">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.5.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/王金平.png" alt="" class="alias-image-photo" data-reactid=".0.5.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.5.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.5.2">王金平</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2e">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2e.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/蔡正元.png" alt="" class="alias-image-photo" data-reactid=".0.2e.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2e.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2e.2">蔡正元</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/尤美女.png" alt="" class="alias-image-photo" data-reactid=".0.2.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/民主進步黨.svg" alt="" class="alias-image-party" data-reactid=".0.2.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2.2">尤美女</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1s">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1s.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/高金素梅.png" alt="" class="alias-image-photo" data-reactid=".0.1s.0.0">-->
+                                <!--</div><img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨團結聯盟.svg" alt="" class="alias-image-party" data-reactid=".0.1s.1">-->
+                                        <!--<h3 class="alias-image-name-kao" data-reactid=".0.1s.2">高金素梅</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1j">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1j.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/陳雪生.png" alt="" class="alias-image-photo" data-reactid=".0.1j.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨籍.svg" alt="" class="alias-image-party" data-reactid=".0.1j.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.1j.2">陳雪生</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2k">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2k.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/鄭天財Sra．Kacaw.png" alt="" class="alias-image-photo" data-reactid=".0.2k.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2k.1">-->
+                                <!--<h3 class="alias-image-name-chen" data-reactid=".0.2k.2">鄭天財Sra．Kacaw</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.5">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.5.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/王金平.png" alt="" class="alias-image-photo" data-reactid=".0.5.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.5.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.5.2">王金平</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2e">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2e.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/蔡正元.png" alt="" class="alias-image-photo" data-reactid=".0.2e.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2e.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2e.2">蔡正元</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1j">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1j.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/陳雪生.png" alt="" class="alias-image-photo" data-reactid=".0.1j.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨籍.svg" alt="" class="alias-image-party" data-reactid=".0.1j.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.1j.2">陳雪生</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2k">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2k.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/鄭天財Sra．Kacaw.png" alt="" class="alias-image-photo" data-reactid=".0.2k.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2k.1">-->
+                                <!--<h3 class="alias-image-name-chen" data-reactid=".0.2k.2">鄭天財Sra．Kacaw</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.5">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.5.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/王金平.png" alt="" class="alias-image-photo" data-reactid=".0.5.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.5.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.5.2">王金平</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2e">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2e.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/蔡正元.png" alt="" class="alias-image-photo" data-reactid=".0.2e.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2e.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2e.2">蔡正元</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/尤美女.png" alt="" class="alias-image-photo" data-reactid=".0.2.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/民主進步黨.svg" alt="" class="alias-image-party" data-reactid=".0.2.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2.2">尤美女</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1s">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1s.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/高金素梅.png" alt="" class="alias-image-photo" data-reactid=".0.1s.0.0">-->
+                                <!--</div><img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨團結聯盟.svg" alt="" class="alias-image-party" data-reactid=".0.1s.1">-->
+                                        <!--<h3 class="alias-image-name-kao" data-reactid=".0.1s.2">高金素梅</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1j">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1j.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/陳雪生.png" alt="" class="alias-image-photo" data-reactid=".0.1j.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨籍.svg" alt="" class="alias-image-party" data-reactid=".0.1j.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.1j.2">陳雪生</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2k">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2k.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/鄭天財Sra．Kacaw.png" alt="" class="alias-image-photo" data-reactid=".0.2k.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2k.1">-->
+                                <!--<h3 class="alias-image-name-chen" data-reactid=".0.2k.2">鄭天財Sra．Kacaw</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.5">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.5.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/王金平.png" alt="" class="alias-image-photo" data-reactid=".0.5.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.5.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.5.2">王金平</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2e">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2e.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/蔡正元.png" alt="" class="alias-image-photo" data-reactid=".0.2e.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2e.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2e.2">蔡正元</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/尤美女.png" alt="" class="alias-image-photo" data-reactid=".0.2.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/民主進步黨.svg" alt="" class="alias-image-party" data-reactid=".0.2.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2.2">尤美女</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1s">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1s.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/高金素梅.png" alt="" class="alias-image-photo" data-reactid=".0.1s.0.0">-->
+                                <!--</div><img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨團結聯盟.svg" alt="" class="alias-image-party" data-reactid=".0.1s.1">-->
+                                        <!--<h3 class="alias-image-name-kao" data-reactid=".0.1s.2">高金素梅</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1j">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1j.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/陳雪生.png" alt="" class="alias-image-photo" data-reactid=".0.1j.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨籍.svg" alt="" class="alias-image-party" data-reactid=".0.1j.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.1j.2">陳雪生</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2k">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2k.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/鄭天財Sra．Kacaw.png" alt="" class="alias-image-photo" data-reactid=".0.2k.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2k.1">-->
+                                <!--<h3 class="alias-image-name-chen" data-reactid=".0.2k.2">鄭天財Sra．Kacaw</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.5">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.5.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/王金平.png" alt="" class="alias-image-photo" data-reactid=".0.5.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.5.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.5.2">王金平</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2e">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2e.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/蔡正元.png" alt="" class="alias-image-photo" data-reactid=".0.2e.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2e.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2e.2">蔡正元</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1j">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1j.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/陳雪生.png" alt="" class="alias-image-photo" data-reactid=".0.1j.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨籍.svg" alt="" class="alias-image-party" data-reactid=".0.1j.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.1j.2">陳雪生</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2k">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2k.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/鄭天財Sra．Kacaw.png" alt="" class="alias-image-photo" data-reactid=".0.2k.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2k.1">-->
+                                <!--<h3 class="alias-image-name-chen" data-reactid=".0.2k.2">鄭天財Sra．Kacaw</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.5">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.5.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/王金平.png" alt="" class="alias-image-photo" data-reactid=".0.5.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.5.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.5.2">王金平</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2e">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2e.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/蔡正元.png" alt="" class="alias-image-photo" data-reactid=".0.2e.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2e.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2e.2">蔡正元</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/尤美女.png" alt="" class="alias-image-photo" data-reactid=".0.2.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/民主進步黨.svg" alt="" class="alias-image-party" data-reactid=".0.2.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2.2">尤美女</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1s">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1s.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/高金素梅.png" alt="" class="alias-image-photo" data-reactid=".0.1s.0.0">-->
+                                <!--</div><img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨團結聯盟.svg" alt="" class="alias-image-party" data-reactid=".0.1s.1">-->
+                                        <!--<h3 class="alias-image-name-kao" data-reactid=".0.1s.2">高金素梅</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1j">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1j.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/陳雪生.png" alt="" class="alias-image-photo" data-reactid=".0.1j.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨籍.svg" alt="" class="alias-image-party" data-reactid=".0.1j.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.1j.2">陳雪生</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2k">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2k.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/鄭天財Sra．Kacaw.png" alt="" class="alias-image-photo" data-reactid=".0.2k.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2k.1">-->
+                                <!--<h3 class="alias-image-name-chen" data-reactid=".0.2k.2">鄭天財Sra．Kacaw</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.5">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.5.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/王金平.png" alt="" class="alias-image-photo" data-reactid=".0.5.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.5.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.5.2">王金平</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2e">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2e.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/蔡正元.png" alt="" class="alias-image-photo" data-reactid=".0.2e.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2e.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2e.2">蔡正元</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/尤美女.png" alt="" class="alias-image-photo" data-reactid=".0.2.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/民主進步黨.svg" alt="" class="alias-image-party" data-reactid=".0.2.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2.2">尤美女</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1s">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1s.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/高金素梅.png" alt="" class="alias-image-photo" data-reactid=".0.1s.0.0">-->
+                                <!--</div><img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨團結聯盟.svg" alt="" class="alias-image-party" data-reactid=".0.1s.1">-->
+                                        <!--<h3 class="alias-image-name-kao" data-reactid=".0.1s.2">高金素梅</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1j">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1j.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/陳雪生.png" alt="" class="alias-image-photo" data-reactid=".0.1j.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨籍.svg" alt="" class="alias-image-party" data-reactid=".0.1j.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.1j.2">陳雪生</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2k">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2k.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/鄭天財Sra．Kacaw.png" alt="" class="alias-image-photo" data-reactid=".0.2k.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2k.1">-->
+                                <!--<h3 class="alias-image-name-chen" data-reactid=".0.2k.2">鄭天財Sra．Kacaw</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.5">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.5.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/王金平.png" alt="" class="alias-image-photo" data-reactid=".0.5.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.5.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.5.2">王金平</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2e">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2e.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/蔡正元.png" alt="" class="alias-image-photo" data-reactid=".0.2e.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2e.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2e.2">蔡正元</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1j">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1j.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/陳雪生.png" alt="" class="alias-image-photo" data-reactid=".0.1j.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨籍.svg" alt="" class="alias-image-party" data-reactid=".0.1j.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.1j.2">陳雪生</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2k">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2k.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/鄭天財Sra．Kacaw.png" alt="" class="alias-image-photo" data-reactid=".0.2k.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2k.1">-->
+                                <!--<h3 class="alias-image-name-chen" data-reactid=".0.2k.2">鄭天財Sra．Kacaw</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.5">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.5.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/王金平.png" alt="" class="alias-image-photo" data-reactid=".0.5.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.5.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.5.2">王金平</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2e">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2e.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/蔡正元.png" alt="" class="alias-image-photo" data-reactid=".0.2e.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2e.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2e.2">蔡正元</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/尤美女.png" alt="" class="alias-image-photo" data-reactid=".0.2.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/民主進步黨.svg" alt="" class="alias-image-party" data-reactid=".0.2.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2.2">尤美女</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1s">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1s.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/高金素梅.png" alt="" class="alias-image-photo" data-reactid=".0.1s.0.0">-->
+                                <!--</div><img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨團結聯盟.svg" alt="" class="alias-image-party" data-reactid=".0.1s.1">-->
+                                        <!--<h3 class="alias-image-name-kao" data-reactid=".0.1s.2">高金素梅</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1j">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1j.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/陳雪生.png" alt="" class="alias-image-photo" data-reactid=".0.1j.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨籍.svg" alt="" class="alias-image-party" data-reactid=".0.1j.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.1j.2">陳雪生</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2k">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2k.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/鄭天財Sra．Kacaw.png" alt="" class="alias-image-photo" data-reactid=".0.2k.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2k.1">-->
+                                <!--<h3 class="alias-image-name-chen" data-reactid=".0.2k.2">鄭天財Sra．Kacaw</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.5">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.5.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/王金平.png" alt="" class="alias-image-photo" data-reactid=".0.5.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.5.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.5.2">王金平</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2e">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2e.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/蔡正元.png" alt="" class="alias-image-photo" data-reactid=".0.2e.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2e.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2e.2">蔡正元</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/尤美女.png" alt="" class="alias-image-photo" data-reactid=".0.2.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/民主進步黨.svg" alt="" class="alias-image-party" data-reactid=".0.2.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2.2">尤美女</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1s">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1s.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/高金素梅.png" alt="" class="alias-image-photo" data-reactid=".0.1s.0.0">-->
+                                <!--</div><img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨團結聯盟.svg" alt="" class="alias-image-party" data-reactid=".0.1s.1">-->
+                                        <!--<h3 class="alias-image-name-kao" data-reactid=".0.1s.2">高金素梅</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1j">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1j.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/陳雪生.png" alt="" class="alias-image-photo" data-reactid=".0.1j.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨籍.svg" alt="" class="alias-image-party" data-reactid=".0.1j.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.1j.2">陳雪生</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2k">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2k.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/鄭天財Sra．Kacaw.png" alt="" class="alias-image-photo" data-reactid=".0.2k.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2k.1">-->
+                                <!--<h3 class="alias-image-name-chen" data-reactid=".0.2k.2">鄭天財Sra．Kacaw</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.5">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.5.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/王金平.png" alt="" class="alias-image-photo" data-reactid=".0.5.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.5.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.5.2">王金平</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2e">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2e.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/蔡正元.png" alt="" class="alias-image-photo" data-reactid=".0.2e.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2e.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2e.2">蔡正元</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1j">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1j.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/陳雪生.png" alt="" class="alias-image-photo" data-reactid=".0.1j.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨籍.svg" alt="" class="alias-image-party" data-reactid=".0.1j.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.1j.2">陳雪生</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2k">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2k.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/鄭天財Sra．Kacaw.png" alt="" class="alias-image-photo" data-reactid=".0.2k.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2k.1">-->
+                                <!--<h3 class="alias-image-name-chen" data-reactid=".0.2k.2">鄭天財Sra．Kacaw</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.5">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.5.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/王金平.png" alt="" class="alias-image-photo" data-reactid=".0.5.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.5.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.5.2">王金平</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2e">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2e.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/蔡正元.png" alt="" class="alias-image-photo" data-reactid=".0.2e.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2e.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2e.2">蔡正元</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/尤美女.png" alt="" class="alias-image-photo" data-reactid=".0.2.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/民主進步黨.svg" alt="" class="alias-image-party" data-reactid=".0.2.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2.2">尤美女</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1s">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1s.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/高金素梅.png" alt="" class="alias-image-photo" data-reactid=".0.1s.0.0">-->
+                                <!--</div><img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨團結聯盟.svg" alt="" class="alias-image-party" data-reactid=".0.1s.1">-->
+                                        <!--<h3 class="alias-image-name-kao" data-reactid=".0.1s.2">高金素梅</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1j">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1j.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/陳雪生.png" alt="" class="alias-image-photo" data-reactid=".0.1j.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨籍.svg" alt="" class="alias-image-party" data-reactid=".0.1j.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.1j.2">陳雪生</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2k">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2k.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/鄭天財Sra．Kacaw.png" alt="" class="alias-image-photo" data-reactid=".0.2k.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2k.1">-->
+                                <!--<h3 class="alias-image-name-chen" data-reactid=".0.2k.2">鄭天財Sra．Kacaw</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.5">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.5.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/王金平.png" alt="" class="alias-image-photo" data-reactid=".0.5.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.5.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.5.2">王金平</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2e">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2e.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/蔡正元.png" alt="" class="alias-image-photo" data-reactid=".0.2e.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2e.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2e.2">蔡正元</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/尤美女.png" alt="" class="alias-image-photo" data-reactid=".0.2.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/民主進步黨.svg" alt="" class="alias-image-party" data-reactid=".0.2.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2.2">尤美女</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1s">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1s.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/高金素梅.png" alt="" class="alias-image-photo" data-reactid=".0.1s.0.0">-->
+                                <!--</div><img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨團結聯盟.svg" alt="" class="alias-image-party" data-reactid=".0.1s.1">-->
+                                        <!--<h3 class="alias-image-name-kao" data-reactid=".0.1s.2">高金素梅</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.1j">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.1j.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/陳雪生.png" alt="" class="alias-image-photo" data-reactid=".0.1j.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/無黨籍.svg" alt="" class="alias-image-party" data-reactid=".0.1j.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.1j.2">陳雪生</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2k">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2k.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/鄭天財Sra．Kacaw.png" alt="" class="alias-image-photo" data-reactid=".0.2k.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2k.1">-->
+                                <!--<h3 class="alias-image-name-chen" data-reactid=".0.2k.2">鄭天財Sra．Kacaw</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.5">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.5.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/王金平.png" alt="" class="alias-image-photo" data-reactid=".0.5.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.5.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.5.2">王金平</h3>-->
+                        <!--</div>-->
+                        <!--<div class="alias-member-full" data-reactid=".0.2e">-->
+                                <!--<div class="alias-image-background" data-reactid=".0.2e.0">-->
+                                        <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/蔡正元.png" alt="" class="alias-image-photo" data-reactid=".0.2e.0.0">-->
+                                <!--</div>-->
+                                <!--<img src="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/中國國民黨.svg" alt="" class="alias-image-party" data-reactid=".0.2e.1">-->
+                                <!--<h3 class="alias-image-name" data-reactid=".0.2e.2">蔡正元</h3>-->
+                        <!--</div>-->
 
                 </div>
-                <!--<div class="party-sidebar-mobile-hind">-->
-                        <!--<div class="party-sidebar-mobile-size" style="width: 50%;">-->
-                                <!--<h1 class="party-sidebar-h1" style="padding-left: 0px;padding-bottom: 0px;">共同發起團體</h1>-->
-                                <!--<ol class="party-sidebar-ol" style="padding-left: 0px;padding-bottom: 30px;">-->
-                                        <!--<li><h3 class="party-sidebar-h3" style="padding-left: 0px;text-align: left;padding-left: 0px;">島國前進</h3></li>-->
-                                        <!--<li><h3 class="party-sidebar-h3" style="padding-left: 0px;text-align: left;padding-left: 0px;">割闌尾計劃</h3>-->
-                                        <!--<li><h3 class="party-sidebar-h3" style="padding-left: 0px;text-align: left;padding-left: 0px;">人民做主教育基金會</h3>-->
-                                        <!--<li><h3 class="party-sidebar-h3" style="padding-left: 0px;text-align: left;padding-left: 0px;">公民1985行動聯盟</h3>-->
-                                <!--</ol>-->
-                        <!--</div>-->
-                            <!--&lt;!&ndash;</h3>&ndash;&gt;-->
-                        <!--<div class="party-sidebar-mobile-size" style="width: 40%;">-->
-                                <!--<h1 class="party-sidebar-h1" style="padding-left: 0px;padding-bottom: 0px;">工作小組成員</h1>-->
-                                <!--<ol class="party-sidebar-ol" style="padding-left: 0px;padding-bottom: 30px;">-->
-                                        <!--<li><h3 class="party-sidebar-h3" style="">王希、林祖儀、林飛帆、柳林瑋</h3></li>-->
-                                        <!--<li><h3 class="party-sidebar-h3" style="">陳惠敏、陳麗貴、劉明新、蔡旺霖</h3></li>-->
-                                        <!--<li><h3 class="party-sidebar-h3" style="">聯絡人：黃國昌</h3></li>-->
-                                        <!--<li><h3 class="party-sidebar-h3" style="">榮譽召集人：林義雄</h3></li>-->
-                                <!--</ol>-->
-                        <!--</div>-->
-                <!--</div>-->
         </div>
 </div>
-
-<!--<div style="float: left;width: 100%;margin-bottom: 2.5em;">-->
-<!--</div>-->
-<!--&lt;!&ndash;<div class="full-body" style="width: 100%;background-color: #ecdbd1;">&ndash;&gt;-->
-<!--&lt;!&ndash;<div class="action-body" style="width: 80em;margin: auto;background-color: #ecdbd1;">&ndash;&gt;-->
-<!--<div class="full-body" style="width: 100%;background-color: #ecdbd1;padding-bottom: 2em;background-image: url(https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/hand.svg);background-position: left bottom;background-repeat: no-repeat;">-->
-    <!--<div class="action-body" style="width: 80em;margin: auto;">-->
-        <!--<div class="action-sidebar" style="width:20em;text-align: right;display: inline-block; color: #905d5c;font-family: sans-serif;vertical-align: top;">-->
-            <!--<h1 style="font-size: 3em;">立委表態牆</h1>-->
-            <!--<h2 style="font-size: 2em;">最新表態率：0/111</h2>-->
-            <!--<span style="display:inline-block;width: 11em;text-align: center;"><h1 style="background-color: #AC917E;color: #FFFFFF;padding-top: 0.3em;padding-bottom: 0.3em;">→已表態</h1></span>-->
-            <!--<span style="display:inline-block;width: 11em;text-align: center;"><h1 style="background-color: #D5BFB1;color: #8F5C5B;padding-top: 0.3em;padding-bottom: 0.3em;">未表態</h1></span>-->
-            <!--<span style="display:inline-block;width: 11em;text-align: center;">-->
-                <!--<a data-dropdown="drop1" aria-controls="drop1" aria-expanded="false">Has Dropdown</a>-->
-            <!--<ul id="drop1" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">-->
-                <!--<li><a href="#">This is a link</a></li>-->
-                <!--<li><a href="#">This is another</a></li>-->
-                <!--<li><a href="#">Yet another</a></li>-->
-            <!--</ul>-->
-            <!--<a data-dropdown="drop2" aria-controls="drop2" aria-expanded="false">Has Content Dropdown</a>-->
-            <!--<div id="drop2" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1">-->
-                <!--<p>Some text that people will think is awesome! Some text that people will think is awesome! Some text that people will think is awesome!</p>-->
-            <!--</div>-->
-            <!--</span>-->
-        <!--</div>-->
-        <!--&lt;!&ndash;<div id="action-article" style="width:58em;text-align: left;display: inline-block; color: #905d5c;font-family: sans-serif;font-weight: bold;">&ndash;&gt;-->
-        <!--&lt;!&ndash;</div>&ndash;&gt;-->
-    <!--</div>-->
-<!--</div>-->
 
 <!--立委牆-->
 
@@ -498,7 +1114,7 @@
 		});
 		React.render(
                 <FetchData url="https://ef759e7ab8ebacebb837df58b36f0346a93140e2-www.googledrive.com/host/0B3zZU8B9RCrhY0RlbzdKUldTQXM/congressmember.json"/>,
-                document.getElementById('party-article-member')
+                document.getElementById('party-content')
 		);
 </script>
 
